@@ -23,7 +23,7 @@ context('Actions', () => {
       .type('{shift}')
 
       // Delay each keypress by 0.1 sec
-      .type('slow.typing@email.com', { delay: 80 })
+      .type('slow.typing@email.com', { delay: 150 })
       .should('have.value', 'slow.typing@email.com')
 
     cy.get('.action-disabled')
