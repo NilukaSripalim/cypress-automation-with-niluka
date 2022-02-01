@@ -51,4 +51,3 @@ describe('Sync- Async', () => {
     .should("equal", "WSO2 Identity Server");
     });
 });
-cd ..
