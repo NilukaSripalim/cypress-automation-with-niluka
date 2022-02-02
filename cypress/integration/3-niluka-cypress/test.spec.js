@@ -1,6 +1,6 @@
 
 describe('Sync- Async', () => {
-    it('TC example', () => {
+    it('TC1', () => {
         
         cy.visit("https://wso2.com/identity-server/");
 
@@ -29,15 +29,15 @@ describe('Sync- Async', () => {
     /**
      *  Solution 1:
     */
-    // cy.get(".navbar-brand").eq(1)
-    // .invoke("text")
-    // .then((text) => {
-    //     cy.log("Text",text).then(() =>{
+    cy.get(".navbar-brand").eq(1)
+    .invoke("text")
+    .then((text) => {
+        cy.log("Text",text).then(() =>{
 
-    //         return text;
-    //     })
-    // })
-    // .should("equal", "WSO2 Identity Server");
+            return text;
+        })
+    })
+    .should("equal", "WSO2 Identity Server");
 
     /**
      *  Solution 2:
