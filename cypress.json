@@ -1,3 +1,6 @@
 {
-    "projectId": "egfmpy"
+    "projectId": "egfmpy",
+    "cypress-watch-and-reload": {
+        "watch": ["page/*", "src/*.js", "**/*.spec.js"]
+    }
 }
